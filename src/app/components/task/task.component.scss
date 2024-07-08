@@ -1,0 +1,29 @@
+.container_task {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #ededed;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+
+  p {
+    flex: 1;
+    margin: 0 1rem;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: all .24s;
+
+    &:hover {
+      color: red;
+    }
+  }
+}

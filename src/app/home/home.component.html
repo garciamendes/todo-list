@@ -1,0 +1,14 @@
+<div class="container-main-root">
+  <div class="content-main">
+    <div class="container-input">
+      <input placeholder="task..." type="text" id="task" [formControl]="task">
+      <button (click)="addNewtask(); task.reset()">Adicionar</button>
+    </div>
+
+    <div class="container-tasks">
+      @for (item of items; track $index) {
+        <app-task [data]='item' (click)="deleteTask(item.id)"></app-task>
+      }
+    </div>
+  </div>
+</div>

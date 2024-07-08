@@ -1,0 +1,56 @@
+.container-main-root {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  .content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    padding-top: 1rem;
+
+    .container-input {
+      display: flex;
+      width: 100%;
+      height: 5%;
+      gap: 10px;
+
+      input {
+        flex: 1;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        background-color: #EDEDED;
+      }
+
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        padding: 0px 2rem;
+        font-size: 1rem;
+        background-color: #EDEDED;
+      }
+    }
+
+    .container-tasks {
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      width: 100%;
+      padding: 1rem 0;
+
+      &::-webkit-scrollbar {
+        width: 0px ;
+      }
+    }
+  }
+}
